@@ -1,0 +1,31 @@
+.tabl {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50px 50px 50px 50px;
+    gap: 10px;
+}
+
+
+.item {
+    border: green 1px solid;
+    text-align: center;
+
+}
+
+.item:nth-child(1) {
+    grid-column: span 2
+}
+
+.item:nth-child(7) {
+    grid-column: 1;
+}
+
+.item:nth-child(7) {
+    grid-row: span 2;
+    grid-column: span 2;
+}
+
+.item:nth-child(11) {
+    grid-column: 1;
+    grid-column: span 3;
+}
